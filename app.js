@@ -3,19 +3,21 @@
       let formEl = document.querySelector("form");
       let tableEl = document.querySelector("table");
       let tbodyEl = document.querySelector("tbody");
-    
+      
 
 function addNewBook(e){
     e.preventDefault();
     let bookname = document.getElementById("bookname").value;
     
+    let bookpages = Math.floor (Math.random() *500) +1; 
+
     let bookprice = document.getElementById("bookprice").value;
    
     
     tbodyEl.innerHTML += `
             <tr>
                 <td>${bookname}</td>
-                <td></td>
+                <td>${bookpages}</td>
                 <td>${bookprice}</td>
                 <td><button class="deleteBtn">Delete</button></td>
             </tr>
