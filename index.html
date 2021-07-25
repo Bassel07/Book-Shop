@@ -4,9 +4,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Book Shop</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
 </head>
 <body>
-    
+    <header>
+        <h1>Book Shop</h1>
+    </header>
+    <main>
+    <section class="s1">
+        <form id="form1">
+            <label for="bookname">Book Name:</label><br>
+            <input type="text" id="bookname" name="bookname" ><br>
+            <label for="bookprice">Book Price:</label><br>
+            <input list="prices" id="bookprice" name="bookprice" >
+            <datalist id="prices">
+                <option value="100JD">
+                <option value="500JD">
+                <option value="1000JD">
+                
+              </datalist><br><br>
+            <button id="btn1">Submit</button>
+          </form>
+    </section>
+
+    <section class="s2">
+     <div id="container">
+         <table>
+             <th>
+                <td>Book Name</td>
+                <td>Book Pages</td>
+                <td>Price</td>
+             </th>
+             <tbody>
+
+             </tbody>
+         </table>
+
+     </div>
+    </section>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="app.js"></script>
 </body>
 </html>

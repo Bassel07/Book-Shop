@@ -1,0 +1,49 @@
+body {
+    background-image: url("bk.jpg");
+    background-color: #cccccc;
+    background-size: 1500px 700px;
+    background-repeat: no-repeat, repeat;
+    font-family: "Roboto", sans-serif ;
+   }
+
+   h1{
+       text-align: center;
+       margin: 0px auto;
+       font-size: 200%;
+   }
+
+
+   #form1{
+       
+       height: 300px;
+       width: 100%;
+       
+       
+   }
+
+   .s1 {
+    margin-top:144px;
+    height: 150px;
+    width: 50%;
+    border-style: ridge;
+    margin-left: 250px;
+    margin-bottom: 0px;
+    
+
+   }
+
+   #bookname{
+    font-size: 110%;
+    font-weight: bold;
+
+   }
+   #bookprice{
+    font-size: 110%;
+    font-weight: bold;
+   }
+
+   #btn1 {
+       background-color: #C68B59;
+       font-size: 110%;
+       width: 33%;
+   }
