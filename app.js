@@ -9,7 +9,7 @@ function addNewBook(e){
     e.preventDefault();
     let bookname = document.getElementById("bookname").value;
     
-    let bookpages = Math.floor (Math.random() *500) +1; 
+    let bookpages = Math.floor (Math.random() *500) +1; //random number between 1 and 500
 
     let bookprice = document.getElementById("bookprice").value;
    
