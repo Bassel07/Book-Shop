@@ -1,26 +1,43 @@
 'use strict'
 
-let booksnames = ['1','2','3','4','5'] 
+      let formEl = document.querySelector("form");
+      let tableEl = document.querySelector("table");
+      let tbodyEl = document.querySelector("tbody");
+    
 
-let container = document.getElementById('container');
-let tableEl = document.createElement('table');
-container.appendChild(tableEl);
+function addNewBook(e){
+    e.preventDefault();
+    let bookname = document.getElementById("bookname").value;
+    
+    let bookprice = document.getElementById("bookprice").value;
+   
+    
+    tbodyEl.innerHTML += `
+            <tr>
+                <td>${bookname}</td>
+                <td></td>
+                <td>${bookprice}</td>
+                <td><button class="deleteBtn">Delete</button></td>
+            </tr>
+        `;
+        }
 
-let books = [];
+        function deleteRow(e){
 
-function book(bookName, bookPages, thePrice){
-this.bookName = bookName;
-this.bookPages = bookPages;
-this.thePrice = thePrice;
-
-books.push(this)
-}
-
-book.prototype.calcTotal = function calcTotal(min, max) {
-            min = Math.ceil(min);
-            max = Math.floor(max);
-            return Math.floor(Math.random() * (max - min + 1)) + min; 
-          }
-    }
-}
-
+            if(!e.target.classList.contains("deleteBtn")){
+                return;
+            }
+            
+            let btn = e.target;
+            btn.closest("tr").remove();
+            
+            }
+            
+            formEl.addEventListener("submit", addNewBook);
+            tableEl.addEventListener("click", deleteRow);
+               
+            
+            function saveToLocalStorage(){
+                localStorage.setItem('key', )
+            }
+            saveToLocalStorage()
